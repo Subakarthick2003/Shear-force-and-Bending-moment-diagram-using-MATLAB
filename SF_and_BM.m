@@ -1,8 +1,8 @@
 clc
 clear all
-w=20;
-l=4;
-x =[0:0.1:4];
+w=input('Enter the load in kN-m');
+l=input('Enter the length in m');
+x =[0:0.1:l];
 v =-(w*x)+((w*l)/2);
 m =-((w*x.^2)/2)+(w*l*x)/2;
 plot(x,v)
